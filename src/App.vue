@@ -10,6 +10,12 @@
     <t-input type="warning" v-model="val"></t-input>
     <t-input type="" v-model="val"></t-input>
     <p>{{ val }}</p>
+
+    <br>
+    <br>
+    <br>
+
+    <t-friend></t-friend>
   </div>
 </template>
 
