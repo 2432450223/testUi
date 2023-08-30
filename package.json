@@ -1,12 +1,19 @@
 {
   "name": "test-9528-ui",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.9",
   "main": "./dist/test-9527-ui.umd.js",
   "module": "./dist/test-9527-ui.mjs",
+  "style": "./dist/style.css",
   "exports": {
-    "import": "./dist/test-9527-ui.mjs",
-    "require": "./dist/test-9527-ui.umd.js"
+    ".": {
+      "import": "./dist/test-9527-ui.mjs",
+      "require": "./dist/test-9527-ui.umd.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
   },
   "files": [
     "dist/*"
@@ -17,7 +24,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "test-9527-ui": "0.0.6",
+    "test-9527-ui": "0.0.9",
     "vue": "^3.3.4"
   },
   "devDependencies": {
